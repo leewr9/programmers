@@ -43,13 +43,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KAKAO BLIND RECRUITMENT\k진수에서 소수 개수 구하기.cs" />
+    <Compile Include="KAKAO BLIND RECRUITMENT\주차 요금 계산.cs" />
+    <Compile Include="KAKAO TECH INTERNSHIP\두 큐 합 같게 만들기.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Summer Winter Coding\방문 길이.cs" />
+    <Compile Include="Summer Winter Coding\스킬트리.cs" />
     <Compile Include="Summer Winter Coding\영어 끝말잇기.cs" />
     <Compile Include="Summer Winter Coding\점프와 순간 이동.cs" />
+    <Compile Include="x_게임 맵 최단거리.cs" />
+    <Compile Include="스택 큐\기능개발.cs" />
+    <Compile Include="스택 큐\다리를 지나는 트럭.cs" />
     <Compile Include="스택 큐\올바른 괄호.cs" />
+    <Compile Include="스택 큐\주식가격.cs" />
+    <Compile Include="스택 큐\프로세스.cs" />
     <Compile Include="연습문제\JadenCase 문자열 만들기.cs" />
     <Compile Include="연습문제\N개의 최소공배수.cs" />
+    <Compile Include="연습문제\뒤에 있는 큰 수 찾기.cs" />
+    <Compile Include="연습문제\롤케이크 자르기.cs" />
+    <Compile Include="x_숫자 변환하기.cs" />
+    <Compile Include="연습문제\마법의 엘리베이터.cs" />
+    <Compile Include="연습문제\무인도 여행.cs" />
+    <Compile Include="연습문제\연속된 부분 수열의 합.cs" />
+    <Compile Include="연습문제\택배상자.cs" />
+    <Compile Include="연습문제\할인 행사.cs" />
+    <Compile Include="연습문제\행렬의 곱셈.cs" />
+    <Compile Include="연습문제\호텔 대실.cs" />
+    <Compile Include="완전탐색\모음사전.cs" />
+    <Compile Include="완전탐색\소수 찾기.cs" />
+    <Compile Include="완전탐색\전력망을 둘로 나누기.cs" />
+    <Compile Include="완전탐색\피로도.cs" />
+    <Compile Include="깊이 너비 우선 탐색%28DFS BFS%29\타겟 넘버.cs" />
+    <Compile Include="월간 코드 챌린지\2개 이하로 다른 비트.cs" />
+    <Compile Include="월간 코드 챌린지\n^2 배열 자르기.cs" />
+    <Compile Include="월간 코드 챌린지\괄호 회전하기.cs" />
     <Compile Include="연습문제\귤 고르기.cs" />
     <Compile Include="연습문제\다음 큰 숫자.cs" />
     <Compile Include="연습문제\멀리 뛰기.cs" />
@@ -59,12 +87,20 @@
     <Compile Include="연습문제\최솟값 만들기.cs" />
     <Compile Include="연습문제\피보나치 수.cs" />
     <Compile Include="완전탐색\카펫.cs" />
+    <Compile Include="월간 코드 챌린지\삼각 달팽이.cs" />
     <Compile Include="월간 코드 챌린지\이진 변환 반복하기.cs" />
+    <Compile Include="월간 코드 챌린지\쿼드압축 후 개수 세기.cs" />
+    <Compile Include="정렬\H-Index.cs" />
+    <Compile Include="x_가장 큰 수.cs" />
+    <Compile Include="x_큰 수 만들기.cs" />
     <Compile Include="팁스타운\예상 대진표.cs" />
+    <Compile Include="해시\의상.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="탐욕법\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

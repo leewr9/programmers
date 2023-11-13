@@ -10,8 +10,8 @@ namespace Lv._1.KAKAO_BLIND_RECRUITMENT
     {
         public int[] solution(string today, string[] terms, string[] privacies)
         {
-            Dictionary<string, int> termDays = new Dictionary<string, int>();
-            List<int> answer = new List<int>();
+            int[] record = new int[privacies.Length];
+            int[] check = new int[26];
 
             DateTime date = DateTime.Parse(today);
 
@@ -20,23 +20,32 @@ namespace Lv._1.KAKAO_BLIND_RECRUITMENT
             int day = (date.Year * year) + (date.Month * month) + date.Day;
 
             for (int i = 0; i < terms.Length; i++)
-            {
-                string[] days = terms[i].Split(' ');
-                termDays.Add(days[0], int.Parse(days[1]) * month);
-            }
+                check[terms[i][0] - 65] = int.Parse(terms[i].Split(' ')[1]) * month;
 
+            int count = 0;
             for (int i = 0; i < privacies.Length; i++)
             {
                 string[] privacie = privacies[i].Split(' ');
                 string[] days = privacie[0].Split('.');
 
-                int parseDay = (int.Parse(days[0]) * year) + (int.Parse(days[1]) * month) + int.Parse(days[2]) + termDays[privacie[1]];
+                int parseDay = (int.Parse(days[0]) * year) + (int.Parse(days[1]) * month) + int.Parse(days[2]) + check[privacie[1][0] - 65];
 
                 if (parseDay <= day)
-                    answer.Add(i + 1);
+                {
+                    record[i] = i + 1;
+                    count++;
+                }
             }
 
-            return answer.ToArray();
+            int[] answer = new int[count];
+            int index = 0;
+            for (int i = 0; i < record.Length; i++)
+            {
+                if (record[i] > 0)
+                    answer[index++] = record[i];
+            }
+
+            return answer;
         }
     }
 }
