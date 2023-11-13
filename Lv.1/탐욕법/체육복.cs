@@ -15,19 +15,13 @@ namespace Lv._1.탐욕법
             int[] suit = new int[n + 1];
 
             for (int i = 0; i < suit.Length; i++)
-            {
                 suit[i]++;
-            }
 
             for (int i = 0; i < lost.Length; i++)
-            {
                 suit[lost[i]]--;
-            }
 
             for (int i = 0; i < reserve.Length; i++)
-            {
                 suit[reserve[i]]++;
-            }
 
             for (int i = 0; i < suit.Length; i++)
             {
@@ -45,9 +39,7 @@ namespace Lv._1.탐욕법
                     }
                 }
                 else
-                {
                     answer++;
-                }
             }
 
             return answer;
